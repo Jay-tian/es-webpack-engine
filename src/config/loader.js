@@ -82,3 +82,14 @@ export const importsLoader = (regExp) => {
     loader: 'imports-loader?define=>false&module=>false&exports=>false&this=>window',
   }
 };
+
+export const eslintLoader = () => {
+  return {
+		enforce: 'pre',
+		test:/\.(js|html)$/,
+		loader: 'eslint-loader',
+		options: {
+			fix: true,
+		}
+	};
+}

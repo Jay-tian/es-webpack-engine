@@ -6,6 +6,16 @@
 
 ### 配置 
 
+#### 格式化配置
+因集成了eslint，对js进行代码格式校验和自动格式化，需进行相应的配置
+详情查看[eslint](http://eslint.cn/docs/user-guide/getting-started)<br/>
+在项目根目录执行 
+```
+./node_modules/.bin/eslint --init
+```
+
+在项目根路径生成 .eslintignore 文件, 项目会忽悠检查该文件中所列的文件
+
 **配置文件 webpack.config.js**
 
 ```javascript

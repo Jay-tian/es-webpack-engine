@@ -42,7 +42,8 @@ const config = {
       ]),
       loaders.cssLoader(), 
       loaders.lessLoader(),
-      loaders.importsLoader(options.noParseDeps)
+      loaders.importsLoader(options.noParseDeps),
+      loaders.eslintLoader(),
     ],
   },
   plugins: [
